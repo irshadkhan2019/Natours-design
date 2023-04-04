@@ -1,0 +1,16 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%; //100% is 16px =1 rem 
+  //62.5 is 10px =1 rem
+}
+
+body {
+  box-sizing: border-box;
+}
