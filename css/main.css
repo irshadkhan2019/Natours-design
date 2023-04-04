@@ -17,7 +17,7 @@ html {
   font-size: 62.5%; }
 
 body {
-  font-family: "Lato",sans-serif;
+  font-family: "Lato", sans-serif;
   font-weight: 400;
   line-height: 1.7;
   color: #777;
@@ -31,13 +31,13 @@ body {
   background-size: cover;
   background-position: top;
   clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%); }
-  .header .logo-box {
+  .header__logo-box {
     position: absolute;
     top: 4rem;
     left: 4rem; }
-  .header .logo {
+  .header__logo {
     height: 3.5rem; }
-  .header .text-box {
+  .header__text-box {
     position: absolute;
     top: 45%;
     left: 50%;
@@ -49,7 +49,7 @@ body {
   text-transform: uppercase;
   backface-visibility: hidden;
   margin-bottom: 6rem; }
-  .heading-primary .heading-primary-main {
+  .heading-primary--main {
     display: block;
     font-size: 6rem;
     font-weight: 700;
@@ -57,7 +57,7 @@ body {
     animation-name: moveInLeft;
     animation-duration: 2s;
     animation-timing-function: ease-out; }
-  .heading-primary .heading-primary-sub {
+  .heading-primary--sub {
     display: block;
     font-size: 2rem;
     font-weight: 700;
@@ -87,10 +87,10 @@ body {
   transform: translateY(-0.2rem);
   box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2); }
 
-.btn-white {
+.btn--white {
   background-color: white;
   color: #777; }
-  .btn-white::after {
+  .btn--white::after {
     background-color: #fff; }
 
 .btn::after {
@@ -105,7 +105,7 @@ body {
   z-index: -1;
   transition: all 0.5s; }
 
-.btn-animated {
+.btn--animated {
   animation: moveInBottom 1s ease-in .75s;
   animation-fill-mode: backwards; }
 
