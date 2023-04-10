@@ -1,5 +1,5 @@
 .btn {
-
+  &,
   &:link,
   &:visited {
     text-transform: uppercase;
@@ -10,6 +10,12 @@
     transition: all 0.5s;
     position: relative;
     font-size: $defaut-font-size;
+
+    // for button dont have link ,visited .. pseudo class
+    border: none;
+    cursor: pointer;
+
+
   }
 
   &:hover {
@@ -22,7 +28,9 @@
     }
   }
 
-  &:active {
+  &:active ,
+  &:focus{
+    outline: none;
     transform: translateY(-0.2rem);
     box-shadow: 0 0.5rem 1rem rgba($color-black, 0.2);
   }
