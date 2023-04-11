@@ -1,4 +1,4 @@
-.bg-video{
+.bg-video {
   position: absolute;
   top: 0;
   left: 0;
@@ -9,7 +9,7 @@
   filter: brightness(90%);
   overflow: hidden;
 
-  &__content{
+  &__content {
     height: 100%;
     width: 100%;
     //fill entire parent while still maintaining aaspect ratio
