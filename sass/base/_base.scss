@@ -9,8 +9,37 @@
 html {
   font-size: 62.5%; //100% is 16px =1 rem 
   //62.5 is 10px =1 rem
+
+  @include respond(tab-land) {
+    //if width<1200 apply this style to html 
+    // need 1rem to be 9px ,100% is 16px so 9px is(900/16)=56.25
+    font-size: 56.25%;
+  }
+
+  @include respond(tab-port) {
+    //if width<900 apply this style to html 
+    // need 1rem to be 8px ,100% is 16px so 8px is(800/16)=50
+    font-size: 50%;
+  }
+
+  @include respond(phone) {
+    // need 1rem to be 6px
+    font-size: 37.5%;
+  }
+
+  @include respond(big-desktop) {
+    //1remm=12px
+    font-size: 75%;
+  }
+
 }
 
 body {
   box-sizing: border-box;
+  padding: 2.5rem;
+
+
+  @include respond(tab-port) {
+    padding: 0;
+  }
 }

@@ -12,3 +12,66 @@
   left: 50%;
   transform: translate(-50%, -50%);
 }
+
+//MEDIA QUERY MANAGER
+/* 
+0-600px :phone
+600-900px :tablet portrait
+900-1200: tablet landscape
+1200-1800: My normal style :)
+1800+: Big desktop
+
+ $breakpoint argument choices:
+ -phone
+ -tab-port
+ -tab-land
+ -big-desktop
+
+ rem and em in media queries are always fixed i.e
+ 1rem=1em=16px
+
+ ORDER:base +typography > general layout +grid > page layout > componnts
+*/
+@mixin respond($breakpoint) {
+
+  @if $breakpoint ==phone {
+
+    // 600px/16 ==37.5em
+    @media(max-width:37.5em) {
+      @content
+    }
+
+    ;
+  }
+
+  @if $breakpoint ==tab-port {
+
+    // 900px
+    @media(max-width:56.25em) {
+      @content
+    }
+
+    ;
+  }
+
+  @if $breakpoint ==tab-land {
+
+    // 1200px
+    @media(max-width:75em) {
+      @content
+    }
+
+    ;
+  }
+
+  @if $breakpoint ==big-desktop {
+
+    // 1800px
+    @media(min-width:112.5em) {
+      @content
+    }
+
+    ;
+  }
+
+}
